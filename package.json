@@ -1,0 +1,10 @@
+{
+  "name": "MiniSwap",
+  "version": "1.0.0",
+  "description": "a simple swap contract for eth-weth pair",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.2"
+  }
+}
