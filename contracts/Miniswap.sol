@@ -39,6 +39,7 @@ contract Miniswap is IMiniswap {
         override
         ensure(deadline)
     {
+        TransferHelper.safeTransferFrom(WETH, address(msg.sender), address(this), amount);
     	IWETH(WETH).withdraw(amount);
         TransferHelper.safeTransferETH(address(msg.sender), amount);
     }

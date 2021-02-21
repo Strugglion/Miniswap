@@ -6,5 +6,5 @@ module.exports = function (deployer) {
 	// ropsten or rinkeby testnet
 	const weth9_address = "0xc778417E063141139Fce010982780140Aa0cD5Ab";
 
-	deployer.deploy(Miniswap);
+	deployer.deploy(Miniswap, weth9_address);
 }
